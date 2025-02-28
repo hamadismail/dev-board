@@ -32,7 +32,54 @@ main {
 /* header styles */
 header {
   background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 18px 24px;
+  border-radius: 0.8rem;
+  padding: 12px 24px;
   margin: 24px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 1.5rem;
+  /* flex gap-3 items-center text-4xl */
+}
+
+.brand_logo {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  /* flex gap-9 items-center */
+}
+.checkbox_items {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--clr-bg);
+  padding: 0.2rem 1rem;
+  border-radius: 1.5rem;
+  /* flex items-center gap-2 bg-[var(--clr-bg)]  */
+}
+.checkbox_img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+.items_cnt {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.color_switcher {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
