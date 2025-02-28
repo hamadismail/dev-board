@@ -11,7 +11,7 @@
     <!-- Link Custom CSS File -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
+  <body class="h-screen">
     <!-- header section -->
     <header>
       <div class="brand">
@@ -49,18 +49,51 @@
     </header>
 
     <!-- main section -->
-    <main>
+    <main class="grid grid-cols-4 gap-5">
       <!-- main contailer -->
-      <div class="main-container">
+      <div class="main-container col-span-3 p-3 bg-white rounded-lg">
         <!-- main heading -->
-        <div class="main_heading"></div>
+        <div
+          class="main_heading grid grid-cols-4 gap-5 border-b border-dashed border-b-gray-400 pb-3"
+        >
+          <div
+            class="task_assign bg-[var(--clr-bg)] flex gap-3 items-center px-4 py-2 rounded-lg"
+          >
+            <div class="p-2 rounded-full h-8 w-8 bg-white">
+              <img src="assets/checkbox.png" alt="" />
+            </div>
+
+            <div>
+              <p>Task Assigned</p>
+              <h1 class="font-bold text-2xl">05</h1>
+            </div>
+          </div>
+          <div
+            class="discover col-span-2 flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg"
+          >
+            <img height="36" width="48" src="assets/board.png" alt="" />
+            <p class="text-white">Discover Something <br />New Today!</p>
+          </div>
+          <div
+            class="task_assign bg-[var(--clr-bg)] flex gap-3 items-center px-4 py-2 rounded-lg"
+          >
+            <div class="p-2 rounded-full h-8 w-8 bg-white">
+              <img src="assets/calender.png" alt="" />
+            </div>
+
+            <div>
+              <p>Wed ,</p>
+              <h1 class="font-bold text-lg">Jul 28 2025</h1>
+            </div>
+          </div>
+        </div>
 
         <!-- main content -->
         <div class="main_content"></div>
       </div>
 
       <!-- sidebar -->
-      <div class="sidebar"></div>
+      <div class="sidebar bg-white"></div>
     </main>
     <!-- Link Script file -->
     <script src="scripts/script.js"></script>
