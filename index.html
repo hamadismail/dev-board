@@ -36,7 +36,7 @@
             alt=""
             class="checkbox_img"
           />
-          <h2 class="items_cnt">23</h2>
+          <h2 id="item" class="items_cnt">23</h2>
         </div>
 
         <!-- color switcher -->
@@ -67,7 +67,7 @@
 
             <div>
               <p class="text-sm">Task Assigned</p>
-              <h1 class="font-bold text-lg">05</h1>
+              <h1 class="font-bold text-lg">0<span id="tasks">6</span></h1>
             </div>
           </div>
           <div
@@ -86,8 +86,8 @@
             </div>
 
             <div>
-              <p class="text-sm">Wed ,</p>
-              <h1 class="font-bold text-lg">Jul 28 2025</h1>
+              <p class="text-sm"><span id="current-day">Wed</span>,</p>
+              <h1 id="current-date" class="font-bold text-lg">Jul 28 2025</h1>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@
           <!-- card design -->
           <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
             <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
-            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <h2 class="my-2 text-lg font-bold">Fix Mobile Button Issue</h2>
             <p
               class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
             >
@@ -109,35 +109,39 @@
               class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
             >
               <div>
-                <p class="text-sm text-gray-400">Deadline</p>
-                <h3 class="text-sm">21 March 2025</h3>
+                <p class="text-sm text-gray-600">Deadline</p>
+                <h3 class="text-sm font-semibold">21 March 2025</h3>
               </div>
               <button class="btn-primary text-sm">Completed</button>
             </div>
           </div>
+
+          <!-- second card -->
           <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
-            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
-            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">CloudSync</p>
+            <h2 class="my-2 text-lg font-bold">Add Dark Mode</h2>
             <p
               class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
             >
-              Debug using Chrome DevTools, check for overlapping elements, and
-              ensure onClick works properly and ensure onClick works properly
+              Store the user's preference in localStorage, update CSS variables
+              dynamically, and apply a smooth transition effect.
             </p>
 
             <div
               class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
             >
               <div>
-                <p class="text-sm text-gray-400">Deadline</p>
-                <h3 class="text-sm">21 March 2025</h3>
+                <p class="text-sm text-gray-600">Deadline</p>
+                <h3 class="text-sm font-semibold">21 March 2025</h3>
               </div>
               <button class="btn-primary text-sm">Completed</button>
             </div>
           </div>
+
+          <!-- third card -->
           <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
-            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
-            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">SwiftPay</p>
+            <h2 class="my-2 text-lg font-bold">Optimize Home page</h2>
             <p
               class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
             >
@@ -149,15 +153,17 @@
               class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
             >
               <div>
-                <p class="text-sm text-gray-400">Deadline</p>
-                <h3 class="text-sm">21 March 2025</h3>
+                <p class="text-sm text-gray-600">Deadline</p>
+                <h3 class="text-sm font-semibold">21 March 2025</h3>
               </div>
               <button class="btn-primary text-sm">Completed</button>
             </div>
           </div>
+
+          <!-- fourth card -->
           <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
-            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
-            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">Meta</p>
+            <h2 class="my-2 text-lg font-bold">Add new emoji 🤲</h2>
             <p
               class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
             >
@@ -169,15 +175,19 @@
               class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
             >
               <div>
-                <p class="text-sm text-gray-400">Deadline</p>
-                <h3 class="text-sm">21 March 2025</h3>
+                <p class="text-sm text-gray-600">Deadline</p>
+                <h3 class="text-sm font-semibold">21 March 2025</h3>
               </div>
               <button class="btn-primary text-sm">Completed</button>
             </div>
           </div>
+
+          <!-- fifth card -->
           <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
-            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
-            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">
+              Google LLC
+            </p>
+            <h2 class="my-2 text-lg font-bold">Integrate OpenAI API</h2>
             <p
               class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
             >
@@ -189,15 +199,17 @@
               class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
             >
               <div>
-                <p class="text-sm text-gray-400">Deadline</p>
-                <h3 class="text-sm">21 March 2025</h3>
+                <p class="text-sm text-gray-600">Deadline</p>
+                <h3 class="text-sm font-semibold">21 March 2025</h3>
               </div>
               <button class="btn-primary text-sm">Completed</button>
             </div>
           </div>
+
+          <!-- sixth card -->
           <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
-            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
-            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">Glassdoar</p>
+            <h2 class="my-2 text-lg font-bold">Improve Job searching</h2>
             <p
               class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
             >
@@ -209,8 +221,8 @@
               class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
             >
               <div>
-                <p class="text-sm text-gray-400">Deadline</p>
-                <h3 class="text-sm">21 March 2025</h3>
+                <p class="text-sm text-gray-600">Deadline</p>
+                <h3 class="text-sm font-semibold">21 March 2025</h3>
               </div>
               <button class="btn-primary text-sm">Completed</button>
             </div>
@@ -227,7 +239,11 @@
             <img src="assets/activity.png" alt="" />
             <h3 class="text-lg">Activity Log</h3>
           </div>
-          <button class="text-sm btn-primary">Clear History</button>
+          <button
+            class="text-sm py-2 px-3 rounded-md bg-[var(--clr-acent)] text-white"
+          >
+            Clear History
+          </button>
         </div>
 
         <div class="mt-4 mx-4 space-y-4">
