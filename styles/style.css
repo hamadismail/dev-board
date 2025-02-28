@@ -27,16 +27,13 @@ main {
   border-radius: 8px;
   padding: 8px 12px;
   color: white;
+  cursor: pointer;
 }
 .block-ellipsis {
-  /* display: block; */
   display: -webkit-box;
-  /* max-width: 100%; */
-  /* height: 43px; */
-  /* margin: 0 auto; */
-  /* font-size: 0.9rem; */
   line-height: 2;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,7 +43,7 @@ main {
 header {
   background-color: #ffffff;
   border-radius: 0.8rem;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1rem;
   margin: 24px auto;
   display: flex;
   justify-content: space-between;

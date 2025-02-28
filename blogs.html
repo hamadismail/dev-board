@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Blogs</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Link Custom CSS File -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="shadow-sm">
+      <div class="brand">
+        <img
+          height="28"
+          width="28"
+          src="assets/logo.png"
+          alt=""
+          class="brand_logo"
+        />
+        <h2 class="brand_title text-2xl">
+          Dev<span class="font-bold">Board</span>
+        </h2>
+      </div>
+
+      <button class="btn-primary"><a href="index.html">Back to Desk</a></button>
+    </header>
+
+    <h1 class="font-bold text-2xl text-center mb-4">Blogs</h1>
+
+    <main class="pb-20">
+      <div class="bg-white rounded-md mb-2">
+        <h1 class="p-4 text-lg font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h1>
+        <p class="border-b border-gray-500 border-dashed"></p>
+        <p class="p-4 text-gray-600">
+          Selecting by Tag Name (<code>getElementsByTagName</code>), <br />
+          Selecting by ID (<code>getElementById</code>), <br />
+          Selecting by Class Name (<code>getElementsByClassName</code>), <br />
+          Selecting with CSS Selectors (<span>querySelector</span> and
+          <code>querySelectorAll</code>).
+        </p>
+      </div>
+
+      <div class="bg-white rounded-md mb-2">
+        <h1 class="p-4 text-lg font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h1>
+        <p class="border-b border-gray-500 border-dashed"></p>
+        <p class="p-4 text-gray-600">
+          <code>innerHTML</code> - Gets or sets HTML content inside an element.
+          <br />
+          <code>innerText</code> - Gets or sets only visible text, ignoring
+          hidden elements.
+          <br />
+          <code>textContent</code> - Gets or sets all text, including hidden
+          elements.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-md mb-2">
+        <h1 class="p-4 text-lg font-bold">
+          Question-3: What is event delegation in the DOM?
+        </h1>
+        <p class="border-b border-gray-500 border-dashed"></p>
+        <p class="p-4 text-gray-600">
+          Is a technique where a single parent element handles events for
+          multiple child elements.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-md mb-2">
+        <h1 class="p-4 text-lg font-bold">
+          Question-4: What is event bubbling in the DOM?
+        </h1>
+        <p class="border-b border-gray-500 border-dashed"></p>
+        <p class="p-4 text-gray-600">
+          Is a process where an event starts from the target element and
+          propagates up through its parent elements.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-md mb-2">
+        <h1 class="p-4 text-lg font-bold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h1>
+        <p class="border-b border-gray-500 border-dashed"></p>
+        <p class="p-4 text-gray-600">
+          1 -> Creating an Element (document.createElement) <br />
+          2 -> Adding an Element (appendChild) <br />
+          3 -> Removing an Element (removeChild) <br />
+          <br />
+
+          // creating element
+          <br />
+          -------------------
+          <code>
+            <br />
+            const li = document.createElement("li") <br />
+            li.innerText = "JavaScript id fun!" <br />
+            <br />
+          </code>
+          // adding element to the target element
+          <br />
+          -----------------------------------
+          <code>
+            <br />
+            const ul = document.getElementByID('target-id'); <br />
+            ul.appendChild(li); <br />
+            <br />
+          </code>
+          // remove the element
+          <br />
+          ----------------------
+          <code
+            ><br />
+            ul.removeChild(li);
+          </code>
+        </p>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

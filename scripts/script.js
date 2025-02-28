@@ -34,7 +34,9 @@ for (const btn of btnPrimary) {
     alert('Board Updated Successfully');
 
     btn.disabled = true;
-    btn.classList.add('opacity-20');
+    btn.style.backgroundColor = 'gray';
+    btn.style.cursor = 'not-allowed';
+    btn.classList.add('opacity-50');
 
     const tasks = document.getElementById('tasks');
     const taskValue = parseInt(tasks.innerText);
@@ -81,3 +83,10 @@ for (const btn of btnPrimary) {
     activityContainer.appendChild(p);
   });
 }
+
+// clear activity logs
+const btnClearActivity = document.getElementById('clear-activity');
+btnClearActivity.addEventListener('click', () => {
+  const activityContainer = document.getElementById('activity-container');
+  activityContainer.innerHTML = '';
+});
