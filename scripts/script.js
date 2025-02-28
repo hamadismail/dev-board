@@ -43,7 +43,8 @@ for (const btn of btnPrimary) {
 
     taskValue > 1
       ? (tasks.innerText = Math.max(0, taskValue - 1))
-      : (tasks.innerText = '');
+      : ((tasks.innerText = ''),
+        alert('Congrates!!! You have completed all the current task'));
 
     const item = document.getElementById('item');
     const itemvalue = parseInt(item.innerText);
@@ -89,4 +90,18 @@ const btnClearActivity = document.getElementById('clear-activity');
 btnClearActivity.addEventListener('click', () => {
   const activityContainer = document.getElementById('activity-container');
   activityContainer.innerHTML = '';
+});
+
+// color switcher
+function getRandomHexColor() {
+  return (
+    '#' +
+    Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, '0')
+  );
+}
+
+document.getElementById('clr-switcher').addEventListener('click', () => {
+  document.body.style.backgroundColor = getRandomHexColor();
 });
