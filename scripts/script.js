@@ -105,3 +105,14 @@ function getRandomHexColor() {
 document.getElementById('clr-switcher').addEventListener('click', () => {
   document.body.style.backgroundColor = getRandomHexColor();
 });
+
+// --------------------------------------------------
+const ellipsis = document.querySelectorAll('.block-ellipsis');
+for (const elp of ellipsis) {
+  elp.addEventListener('click', () => {
+    for (const ep of ellipsis) {
+      ep.style.overflow = 'hidden';
+    }
+    elp.style.overflow = 'auto';
+  });
+}
