@@ -11,25 +11,27 @@
     <!-- Link Custom CSS File -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="h-screen">
+  <body>
     <!-- header section -->
     <header>
       <div class="brand">
         <img
-          height="32"
-          width="32"
+          height="28"
+          width="28"
           src="assets/logo.png"
           alt=""
           class="brand_logo"
         />
-        <h2 class="brand_title">Dev<span class="font-bold">Board</span></h2>
+        <h2 class="brand_title text-2xl">
+          Dev<span class="font-bold">Board</span>
+        </h2>
       </div>
 
       <div class="actions">
         <div class="checkbox_items">
           <img
-            height="24"
-            width="24"
+            height="16"
+            width="16"
             src="assets/checkbox.png"
             alt=""
             class="checkbox_img"
@@ -39,8 +41,8 @@
 
         <!-- color switcher -->
         <img
-          height="28"
-          width="28"
+          height="24"
+          width="24"
           src="assets/theme-btn.png"
           alt=""
           class="color_switcher"
@@ -49,8 +51,8 @@
     </header>
 
     <!-- main section -->
-    <main class="grid grid-cols-4 gap-5">
-      <!-- main contailer -->
+    <main class="grid grid-cols-4 gap-5 pb-20">
+      <!-- main container -->
       <div class="main-container col-span-3 p-3 bg-white rounded-lg">
         <!-- main heading -->
         <div
@@ -64,15 +66,17 @@
             </div>
 
             <div>
-              <p>Task Assigned</p>
-              <h1 class="font-bold text-2xl">05</h1>
+              <p class="text-sm">Task Assigned</p>
+              <h1 class="font-bold text-lg">05</h1>
             </div>
           </div>
           <div
             class="discover col-span-2 flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg"
           >
             <img height="36" width="48" src="assets/board.png" alt="" />
-            <p class="text-white">Discover Something <br />New Today!</p>
+            <p class="text-white text-lg">
+              Discover Something <br />New Today!
+            </p>
           </div>
           <div
             class="task_assign bg-[var(--clr-bg)] flex gap-3 items-center px-4 py-2 rounded-lg"
@@ -82,18 +86,161 @@
             </div>
 
             <div>
-              <p>Wed ,</p>
+              <p class="text-sm">Wed ,</p>
               <h1 class="font-bold text-lg">Jul 28 2025</h1>
             </div>
           </div>
         </div>
 
         <!-- main content -->
-        <div class="main_content"></div>
+        <div class="main_content grid grid-cols-3 pt-3 gap-5">
+          <!-- card design -->
+          <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
+            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p
+              class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
+            >
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div
+              class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
+            >
+              <div>
+                <p class="text-sm text-gray-400">Deadline</p>
+                <h3 class="text-sm">21 March 2025</h3>
+              </div>
+              <button class="btn-primary text-sm">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
+            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p
+              class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
+            >
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div
+              class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
+            >
+              <div>
+                <p class="text-sm text-gray-400">Deadline</p>
+                <h3 class="text-sm">21 March 2025</h3>
+              </div>
+              <button class="btn-primary text-sm">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
+            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p
+              class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
+            >
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div
+              class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
+            >
+              <div>
+                <p class="text-sm text-gray-400">Deadline</p>
+                <h3 class="text-sm">21 March 2025</h3>
+              </div>
+              <button class="btn-primary text-sm">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
+            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p
+              class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
+            >
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div
+              class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
+            >
+              <div>
+                <p class="text-sm text-gray-400">Deadline</p>
+                <h3 class="text-sm">21 March 2025</h3>
+              </div>
+              <button class="btn-primary text-sm">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
+            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p
+              class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
+            >
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div
+              class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
+            >
+              <div>
+                <p class="text-sm text-gray-400">Deadline</p>
+                <h3 class="text-sm">21 March 2025</h3>
+              </div>
+              <button class="btn-primary text-sm">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[var(--clr-bg)] p-3 rounded-lg">
+            <p class="text-sm py-1 px-2 bg-white rounded-md w-fit">ShopEase</p>
+            <h2 class="my-2 text-lg">Fix Mobile Button Issue</h2>
+            <p
+              class="px-2 py-1 text-sm bg-white rounded-md text-gray-500 block-ellipsis"
+            >
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+
+            <div
+              class="mt-4 pt-2 flex items-end justify-between border-t border-dashed border-gray-500"
+            >
+              <div>
+                <p class="text-sm text-gray-400">Deadline</p>
+                <h3 class="text-sm">21 March 2025</h3>
+              </div>
+              <button class="btn-primary text-sm">Completed</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- sidebar -->
-      <div class="sidebar bg-white"></div>
+      <div class="sidebar rounded-lg bg-white">
+        <div
+          class="flex items-center flex-col mt-4 border-b border-gray-500 border-dashed pb-4"
+        >
+          <div class="flex my-4 gap-2">
+            <img src="assets/activity.png" alt="" />
+            <h3 class="text-lg">Activity Log</h3>
+          </div>
+          <button class="text-sm btn-primary">Clear History</button>
+        </div>
+
+        <div class="mt-4 mx-4 space-y-4">
+          <p class="rounded-lg text-sm p-2 text-gray-800 bg-[var(--clr-bg)]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est
+            saepe quas ipsum praesentium id velit ipsa et sint distinctio!
+          </p>
+          <p class="rounded-lg text-sm p-2 text-gray-800 bg-[var(--clr-bg)]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est
+            saepe quas ipsum praesentium id velit ipsa et sint distinctio!
+          </p>
+        </div>
+      </div>
     </main>
     <!-- Link Script file -->
     <script src="scripts/script.js"></script>
